@@ -1,0 +1,78 @@
+nav .navbar-brand{
+	padding: 10px;
+	font-family: 'Mouse Memoirs', sans-serif;
+	letter-spacing: 2px;
+	color: rgb(250, 240, 255);
+	text-align: center;
+	font-size: 30px;
+
+}
+
+.iconbox {
+	font-weight: 600;
+	font-size: 40px;
+	letter-spacing: 1px;
+	margin-left: 550px
+  }
+
+.card {
+
+	box-shadow: 0 4px 8px 0 ;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+}
+nav ul li a {
+	font-weight: bold;
+	color: rgb(166, 8, 245);
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+nav ul li a:hover {
+	color: black;
+	font-size: 18px;
+	
+}
+
+
+@media screen and (max-width: 768px) {
+	nav ul, .contact {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.menu-toggle{
+		display: flex;
+	}
+	nav ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		width: 40%;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		background: -webkit-linear-gradient(top, #e38ae0, #64a192);
+		z-index: -1;
+		transform: translate(100%);
+		transition: all 0.7s;
+		opacity: 0;
+
+	}
+	nav ul.slide{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
